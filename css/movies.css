@@ -1,0 +1,148 @@
+body,
+html,
+main {
+  font-family: "Caudex", serif; /* from Google Fonts */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+main > div {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+}
+
+#main {
+  /* bal oldali képernyőrész */
+  height: 100%;
+  left: 0px;
+  padding: 10px;
+  position: absolute;
+  width: 80%;
+  white-space: normal;
+}
+
+#side {
+  background: #404040;
+  box-shadow: 5px 0 30px 6px black;
+  position: fixed;
+  right: 0px;
+  height: 100%;
+  width: 30%;
+  color: white;
+  font-size: 20px;
+}
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#searchArea {
+  border: none;
+  bottom: 30px;
+  height: 50px;
+  left: 0;
+  padding-left: 10px;
+  position: absolute;
+  width: 95%;
+}
+
+.small-div {
+  display: inline-block;
+  line-height: 35px;
+  height: 20%;
+  padding: 5px;
+  text-align: center;
+  width: 25%;
+}
+.cover-image {
+  display: inline-block;
+}
+.small-image {
+  display: inline-block;
+  bottom: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 100px;
+  transition: 0.5s;
+  width: 100px;
+}
+
+.small-div:hover .small-image {
+  /*div felett az egér, benne lévő kép tulajdonságát fogja változtatni*/
+  box-shadow: 0 0 20px 15px snow;
+}
+
+.small-div > p {
+  font-size: 14px;
+  margin: 10px 0 7px 0;
+  border-style: dotted;
+}
+
+.small-div:hover p {
+  /*div felett az egér, benne lévő p tulajdonságát fogja változtatni*/
+  font-weight: bold;
+  text-shadow: 1px 1px 5px snow;
+}
+
+#displayArea p {
+  padding: 5px;
+  color: antiquewhite;
+}
+
+[type="text"] {
+  border: none;
+  font-family: inherit;
+  font-size: 18px;
+  padding: 5px;
+  width: 80%;
+}
+#statistics {
+  top: 0px;
+  background-color: rgb(58, 57, 57);
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  font-family: inherit;
+  margin: 0 10px;
+  padding: 7px 13px;
+  transition: 0.3s;
+}
+#searchButton {
+  background-color: rgb(58, 57, 57);
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 7px 13px;
+  transition: 0.3s;
+}
+
+#searchButton:hover,
+#statistics:hover {
+  background: white;
+  color: black;
+  font-weight: bold;
+}
+
+#pictureDisplay > img {
+  width: 100%;
+}
+
+#nameDisplay > p {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px 25px;
+  text-align: left;
+}
+
+#bioDisplay {
+  padding: 20px;
+  color: white;
+}
